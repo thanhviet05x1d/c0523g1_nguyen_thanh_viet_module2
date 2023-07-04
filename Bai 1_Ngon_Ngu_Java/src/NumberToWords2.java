@@ -125,13 +125,7 @@ public class NumberToWords2 {
     public static String ConvertTens(int number) {
         String strten = "";
         switch (number) {
-            case 0:
-                strten = "";
-                break;
-            case 1:
-                strten = "one";
-                break;
-            case 2:
+             case 2:
                 strten = "twenty";
                 break;
             case 3:
