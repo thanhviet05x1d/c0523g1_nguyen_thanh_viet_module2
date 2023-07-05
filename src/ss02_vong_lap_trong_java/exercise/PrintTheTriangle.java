@@ -1,3 +1,5 @@
+package ss02_vong_lap_trong_java.exercise;
+
 import java.util.Scanner;
 
 public class PrintTheTriangle {

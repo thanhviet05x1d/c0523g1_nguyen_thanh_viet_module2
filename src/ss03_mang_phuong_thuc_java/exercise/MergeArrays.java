@@ -1,4 +1,5 @@
-import java.sql.Array;
+package ss03_mang_phuong_thuc_java.exercise;
+
 import java.util.Scanner;
 
 public class MergeArrays {
