@@ -2,7 +2,7 @@ package ss01_introduction_to_java.exercise;
 
 import java.util.Scanner;
 
-public class NumberToWordsVietNam {
+public class NumberToWordsEng {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Mời bạn nhập vào số n");
