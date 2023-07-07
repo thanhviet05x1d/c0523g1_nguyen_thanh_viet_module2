@@ -26,9 +26,10 @@ public class SumTheNumbersOnTheMainDiagonalOfASquareMatrix {
         //Thực hiện tính tổng các giá trị của phần tử đường chéo:
         int sum = 0;
         for (int i = 0; i < myMatrix.length; i++) {
-            sum += myMatrix[i][i];
+            int temp = myMatrix[i][i] + myMatrix[i][myMatrix.length - 1 - i];
+            sum += temp;
         }
-        System.out.println("Tổng tất cả giá trị trên đường chéo bằng: " + sum);
+        System.out.println("Tổng tất cả giá trị trên 2 đường chéo bằng: " + sum);
     }
 }
 
