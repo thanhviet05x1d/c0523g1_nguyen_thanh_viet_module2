@@ -36,7 +36,7 @@ public class DeleteItemInArray {
         }
 
         // Xóa phần tử index tìm thấy
-        if (found == true) {
+        if (found) {
             for (int i = index; i < arr.length - 1; i++) {
                 arr[i] = arr[i + 1];
             }

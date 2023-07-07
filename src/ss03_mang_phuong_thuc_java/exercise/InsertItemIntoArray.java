@@ -33,7 +33,7 @@ public class InsertItemIntoArray {
 
         // Chèn phần tử tại vị trí index
 
-        if (found == true) {
+        if (found) {
             // Duyệt mảng từ sau tới lấy giá trị tại n bằng giá trị tại n-1
             for (int i = arr.length - 1; i > index; i--) {
                 arr[i] = arr[i - 1];
