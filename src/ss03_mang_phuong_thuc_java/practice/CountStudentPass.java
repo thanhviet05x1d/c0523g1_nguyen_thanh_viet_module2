@@ -1,4 +1,4 @@
-package ss03_mang_phuong_thuc_java.exercise;
+package ss03_mang_phuong_thuc_java.practice;
 
 import java.util.Scanner;
 
