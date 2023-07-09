@@ -6,5 +6,6 @@ public class CircleTest {
         System.out.println(circle);
         circle.setRadius(6.5);
         circle.setColor("green");
+        System.out.println(circle);
     }
 }

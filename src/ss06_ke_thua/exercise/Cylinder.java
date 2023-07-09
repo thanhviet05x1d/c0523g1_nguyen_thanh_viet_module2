@@ -22,14 +22,20 @@ public class Cylinder extends Circle {
     public void setHeight(double height) {
         this.height = height;
     }
-    public double getVolume(){
-        return super.getArea()*this.height;
+
+    public double getVolume() {
+        return super.getArea() * this.height;
     }
+
     @Override
-    public String toString(){
-        return "A cylinder ="
-                + this.getRadius()
-                + " It's color ="
+    public String toString() {
+        return "A cylinder height ="
+                + this.getHeight()
+                +" and radius ="
+                + super.getRadius()
+                +" .Area ="
+                + super.getArea()
+                + " .It's color ="
                 + this.getColor()
                 + " and Volume ="
                 + this.getVolume();

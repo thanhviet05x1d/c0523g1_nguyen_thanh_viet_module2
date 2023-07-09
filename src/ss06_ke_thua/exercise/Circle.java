@@ -36,7 +36,7 @@ public class Circle {
     public String toString() {
         return "A cirle with radius = "
                 + this.getRadius()
-                + " It's color ="
+                + " .It's color ="
                 + this.getColor()
                 + " and Area ="
                 + this.getArea();
