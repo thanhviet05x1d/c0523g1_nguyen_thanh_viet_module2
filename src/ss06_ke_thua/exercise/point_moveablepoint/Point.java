@@ -3,8 +3,8 @@ package ss06_ke_thua.exercise.point_moveablepoint;
 import java.util.Arrays;
 
 public class Point {
-    public float x = 0.0f;
-    public float y = 0.0f;
+    private float x = 0.0f;
+    private float y = 0.0f;
 
     public Point() {
 
@@ -45,8 +45,8 @@ public class Point {
     @Override
     public String toString() {
         return "Point{" +
-                "x=" + x +
-                ", y=" + y +
+                "x=" + this.getX() +
+                ", y=" + this.getY() +
                 '}';
     }
 

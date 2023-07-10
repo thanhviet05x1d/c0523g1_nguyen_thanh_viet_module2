@@ -5,8 +5,8 @@ import ss06_ke_thua.exercise.point2d_point3d.Point3D;
 import java.util.Arrays;
 
 public class MoveablePoint extends Point {
-    public float xSpeed = 0.0f;
-    public float ySpeed = 0.0f;
+    private float xSpeed = 0.0f;
+    private float ySpeed = 0.0f;
 
     public MoveablePoint() {
 
@@ -24,7 +24,7 @@ public class MoveablePoint extends Point {
     }
 
     public float getxSpeed() {
-        return xSpeed;
+        return this.xSpeed;
     }
 
     public void setxSpeed(float xSpeed) {
@@ -32,7 +32,7 @@ public class MoveablePoint extends Point {
     }
 
     public float getySpeed() {
-        return ySpeed;
+        return this.ySpeed;
     }
 
     public void setySpeed(float ySpeed) {
@@ -40,7 +40,7 @@ public class MoveablePoint extends Point {
     }
 
     public float[] getSpeed() {
-        float[] arr = {xSpeed, ySpeed};
+        float[] arr = {this.xSpeed, this.ySpeed};
         return arr;
     }
 
@@ -52,14 +52,13 @@ public class MoveablePoint extends Point {
     @Override
     public String toString() {
         return "MoveablePoint (" +
-                x + "," + y + ")" +
+                super.getX() + "," + super.getY() + ")" +
                 ", speed = (" + xSpeed + "s" +
                 "," + ySpeed + "s)";
     }
 
     public MoveablePoint move() {
-        x += xSpeed;
-        y += ySpeed;
+        super.setXY(super.getX() + xSpeed, super.getY() + ySpeed);
         return this;
     }
 
