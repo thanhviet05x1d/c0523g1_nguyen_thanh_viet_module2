@@ -1,4 +1,4 @@
-package ss06_ke_thua.exercise;
+package ss06_ke_thua.exercise.circle_cylinder;
 
 public class Cylinder extends Circle {
     double height = 9.0;

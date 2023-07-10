@@ -1,4 +1,4 @@
-package ss06_ke_thua.exercise;
+package ss06_ke_thua.exercise.circle_cylinder;
 
 public class CircleTest {
     public static void main(String[] args) {

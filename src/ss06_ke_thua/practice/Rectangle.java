@@ -1,11 +1,12 @@
 package ss06_ke_thua.practice;
 
 public class Rectangle extends Shape {
-    private double width = 1.0;
-    private double height = 1.0;
+    private double width;
+    private double height;
 
     public Rectangle() {
-
+        this.width = 1.0;
+        this.height = 1.0;
     }
 
     public Rectangle(double width, double height) {
@@ -42,6 +43,7 @@ public class Rectangle extends Shape {
     public double getPerimeter() {
         return (this.width + this.height) * 2;
     }
+
     @Override
     public String toString() {
         return "A Rectangle with width="
