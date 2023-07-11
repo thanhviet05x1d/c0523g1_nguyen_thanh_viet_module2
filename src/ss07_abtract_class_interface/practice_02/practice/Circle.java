@@ -1,4 +1,4 @@
-package ss06_ke_thua.practice;
+package ss07_abtract_class_interface.practice_02.practice;
 
 public class Circle extends Shape {
     private double radius;
