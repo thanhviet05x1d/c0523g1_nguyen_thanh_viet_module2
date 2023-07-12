@@ -1,4 +1,4 @@
-package ss07_abtract_class_interface.exercise;
+package ss07_abtract_class_interface.exercise1;
 
 public class CircleTest {
     public static void main(String[] args) {

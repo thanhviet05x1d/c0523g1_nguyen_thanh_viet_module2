@@ -1,7 +1,8 @@
-package ss07_abtract_class_interface.exercise;
+package ss07_abtract_class_interface.exercise2;
 
-// Mục tiêu:Luyện tập kỹ năng lập bản thiết kế và triển khai lớp đối tượng kế thừa.
-public class Shape implements Resizeable{
+// Mục tiêu:Luyện tập thiết kế và triển khai interface.
+// Shape phải là lớp Abstract, vì có phương thức getArea() không biết thế nào.
+public abstract class Shape {
     public String color;
     public boolean filled;
 
@@ -31,6 +32,8 @@ public class Shape implements Resizeable{
         this.filled = filled;
     }
 
+    abstract double getArea();
+
     @Override
     public String toString() {
         return "A Shape with color of "
@@ -39,9 +42,4 @@ public class Shape implements Resizeable{
                 + (isFilled() ? "filled" : "not filled");
     }
 
-
-    @Override
-    public void resize(double percent) {
-
-    }
 }

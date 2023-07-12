@@ -36,4 +36,7 @@ public class Square extends Rectangle {
                 + ", which is a subclass of "
                 + super.toString();
     }
+    public double getArea() {
+        return this.getSide() * this.getSide();
+    }
 }

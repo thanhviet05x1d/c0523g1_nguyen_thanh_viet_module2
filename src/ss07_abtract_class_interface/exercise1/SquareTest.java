@@ -1,4 +1,4 @@
-package ss07_abtract_class_interface.practice_02.practice;
+package ss07_abtract_class_interface.exercise1;
 
 public class SquareTest {
     public static void main(String[] args) {

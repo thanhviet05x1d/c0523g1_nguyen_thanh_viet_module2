@@ -1,6 +1,6 @@
-package ss07_abtract_class_interface.exercise;
+package ss07_abtract_class_interface.practice3.content;
 
-public class Circle extends Shape implements Resizeable {
+public class Circle extends Shape {
     private double radius;
 
     public Circle() {
@@ -39,8 +39,4 @@ public class Circle extends Shape implements Resizeable {
                 + super.toString();
     }
 
-    @Override
-    public void resize(double percent) {
-        this.radius = this.radius * (1 + percent);
-    }
 }

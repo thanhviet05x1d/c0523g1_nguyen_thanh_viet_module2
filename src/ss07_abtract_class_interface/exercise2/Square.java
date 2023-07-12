@@ -1,6 +1,6 @@
-package ss07_abtract_class_interface.practice_02.practice;
+package ss07_abtract_class_interface.exercise2;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements Colorable {
     public Square() {
 
     }
@@ -20,6 +20,9 @@ public class Square extends Rectangle {
         this.setWidth(side);
         this.setHeight(side);
     }
+    public double getArea() {
+        return this.getSide() * this.getSide();
+    }
 
     @Override
     public void setWidth(double side) {
@@ -35,5 +38,11 @@ public class Square extends Rectangle {
                 + getSide()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides.");
     }
 }

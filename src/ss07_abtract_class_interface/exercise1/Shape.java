@@ -1,7 +1,7 @@
-package ss07_abtract_class_interface.practice_02.practice;
+package ss07_abtract_class_interface.exercise1;
 
 // Mục tiêu:Luyện tập kỹ năng lập bản thiết kế và triển khai lớp đối tượng kế thừa.
-public class Shape {
+public class Shape implements Resizeable{
     public String color;
     public boolean filled;
 
@@ -37,5 +37,11 @@ public class Shape {
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
+    }
+
+
+    @Override
+    public void resize(double percent) {
+
     }
 }

@@ -1,6 +1,6 @@
-package ss07_abtract_class_interface.exercise;
+package ss07_abtract_class_interface.exercise1;
 
-public class Square extends Rectangle implements Resizeable{
+public class Square extends Rectangle{
     public Square() {
 
     }
