@@ -1,5 +1,7 @@
 package ss08_clean_code;
 
+import java.util.Scanner;
+
 public class TennisGame {
     private static final int SCORE_LOVE = 0;
     private static final int SCORE_FIFTEEN = 1;
@@ -14,6 +16,22 @@ public class TennisGame {
     private static final String SCORE_DEUCE = "Deuce";
     private static final String SCORE_ADVANTAGE = "Advantage ";
     private static final String SCORE_WIN = "Win for ";
+
+    // Phương thức 1: Quy điểm người chơi thành chữ
+    private static String getPlayerScore(int score) {
+        switch (score) {
+            case SCORE_LOVE:
+                return SCORE_LOVE_TEXT;
+            case SCORE_FIFTEEN:
+                return SCORE_FIFTEEN_TEXT;
+            case SCORE_THIRTY:
+                return SCORE_THIRTY_TEXT;
+            case SCORE_FORTY:
+                return SCORE_FORTY_TEXT;
+            default:
+                return "";
+        }
+    }
 
     public static String getScore(String player1Name, String player2Name, int player1Score, int player2Score) {
         String score = "";
@@ -53,18 +71,25 @@ public class TennisGame {
         return score;
     }
 
-    private static String getPlayerScore(int score) {
-        switch (score) {
-            case SCORE_LOVE:
-                return SCORE_LOVE_TEXT;
-            case SCORE_FIFTEEN:
-                return SCORE_FIFTEEN_TEXT;
-            case SCORE_THIRTY:
-                return SCORE_THIRTY_TEXT;
-            case SCORE_FORTY:
-                return SCORE_FORTY_TEXT;
-            default:
-                return "";
-        }
+
+    public static void main(String[] args) {
+        // Nhập vào thông tin người chơi
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập tên người chơi 1:");
+        String player1Name = scanner.nextLine();
+        System.out.println("Nhập tên người chơi 2:");
+        String player2Name = scanner.nextLine();
+        System.out.println("Điểm người chơi 1, từ 0 đến 3:");
+        int player1Score = Integer.parseInt(scanner.nextLine());
+        System.out.println("Điểm người chơi 2, từ 0 đến 3:");
+        int player2Score = Integer.parseInt(scanner.nextLine());
+
+        // In ra quy điểm số thành chữ cho từng người chơi
+        System.out.println("Người 1: " + getPlayerScore(player1Score));
+        System.out.println("Người 2: " + getPlayerScore(player2Score));
+
+        // Tìm người thắng cuộc hoặc lợi thế
+        String score = getScore(player1Name, player2Name, player1Score, player2Score);
+        System.out.println(score);
     }
 }
