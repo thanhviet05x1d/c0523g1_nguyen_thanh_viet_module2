@@ -43,7 +43,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
             }
         }
         if (index != 0) {
-            for (int i = index; i < customerList.length; i++) {
+            for (int i = index; i < customerList.length-1; i++) {
                 customerList[i + 1] = customerList[i];
             }
         }
