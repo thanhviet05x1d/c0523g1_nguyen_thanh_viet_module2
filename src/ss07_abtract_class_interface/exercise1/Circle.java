@@ -41,6 +41,7 @@ public class Circle extends Shape {
 
     @Override
     public void resize(double percent) {
-        this.radius = this.radius * (1 + percent);
+        // Tăng kích thước hình, ý của bài tập là tăng diện tích hình lên percent.
+        this.radius = this.radius * Math.sqrt(1 + percent);
     }
 }

@@ -3,8 +3,8 @@ package ss07_abtract_class_interface.exercise2;
 // Mục tiêu:Luyện tập thiết kế và triển khai interface.
 // Shape phải là lớp Abstract, vì có phương thức getArea() không biết thế nào.
 public abstract class Shape {
-    public String color;
-    public boolean filled;
+    private String color;
+    private boolean filled;
 
     public Shape() {
         this.color = "green";

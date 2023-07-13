@@ -36,4 +36,5 @@ public class Square extends Rectangle{
                 + ", which is a subclass of "
                 + super.toString();
     }
+
 }

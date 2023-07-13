@@ -1,9 +1,12 @@
 package ss07_abtract_class_interface.exercise1;
 
 // Mục tiêu:Luyện tập kỹ năng lập bản thiết kế và triển khai lớp đối tượng kế thừa.
-public class Shape implements Resizeable{
-    public String color;
-    public boolean filled;
+// Nên khai báo abstract cho Shape vì nó là một lớp trừu tượng.
+// Vì lớp trừu tượng thì implement, ta không cần phải triển khai phương thức resize
+// Mục đích implement là để cho tất cả các lớp con của Shape có tính năng thừa hưởng Resizeable
+public abstract class Shape implements Resizeable{
+    private String color;
+    private boolean filled;
 
     public Shape() {
         this.color = "green";
@@ -37,11 +40,5 @@ public class Shape implements Resizeable{
                 + getColor()
                 + " and "
                 + (isFilled() ? "filled" : "not filled");
-    }
-
-
-    @Override
-    public void resize(double percent) {
-
     }
 }

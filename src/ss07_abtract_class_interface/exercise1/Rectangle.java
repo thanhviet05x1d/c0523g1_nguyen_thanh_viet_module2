@@ -1,6 +1,6 @@
 package ss07_abtract_class_interface.exercise1;
 
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private double width;
     private double height;
 
@@ -56,7 +56,8 @@ public class Rectangle extends Shape{
 
     @Override
     public void resize(double percent) {
-        this.width = this.width * (1 + percent);
-        this.height = this.height * (1 + percent);
+        double k = this.width / this.height;
+        this.height = this.height * Math.sqrt(1 + percent);
+        this.width = k * this.height;
     }
 }

@@ -17,8 +17,8 @@ public class CustomerController {
             System.out.println(" Quan ly Khach Hang");
             System.out.println(" 1. List");
             System.out.println(" 2. Create");
-            System.out.println(" 3. Update");
-            System.out.println(" 4. Delete");
+            System.out.println(" 3. Delete");
+            System.out.println(" 4. Update");
             System.out.println("Mời bạn nhập vào tùy chọn:");
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
