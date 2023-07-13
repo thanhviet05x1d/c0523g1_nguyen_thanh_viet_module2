@@ -79,9 +79,9 @@ public class TennisGame {
         String player1Name = scanner.nextLine();
         System.out.println("Nhập tên người chơi 2:");
         String player2Name = scanner.nextLine();
-        System.out.println("Điểm người chơi 1, từ 0 đến 3:");
+        System.out.println("Điểm người chơi 1:");
         int player1Score = Integer.parseInt(scanner.nextLine());
-        System.out.println("Điểm người chơi 2, từ 0 đến 3:");
+        System.out.println("Điểm người chơi 2:");
         int player2Score = Integer.parseInt(scanner.nextLine());
 
         // In ra quy điểm số thành chữ cho từng người chơi
