@@ -18,7 +18,7 @@ public class CustomerController {
             System.out.println(" 1. List");
             System.out.println(" 2. Create");
             System.out.println(" 3. Delete");
-            System.out.println(" 4. Update");
+            System.out.println(" 4. Search");
             System.out.println("Mời bạn nhập vào tùy chọn:");
             select = Integer.parseInt(scanner.nextLine());
             switch (select) {
@@ -46,13 +46,20 @@ public class CustomerController {
                     customerService.deleteCustomer(idDel);
                     break;
                 case 4:
+                    System.out.println("Nhập name gợi ý");
+                    String searchName = scanner.nextLine();
+                    customerService.searchCustomerList(searchName);
+                    Customer[] searchCustomerList = customerService.searchCustomerList(searchName);
+                    for (Customer customerS : searchCustomerList) {
+                        System.out.println(customerS);
+                    }
                     break;
                 case 9:
                     System.exit(0);
                     break;
             }
 
-        } while (true);
+         } while (true);
 
     }
 }

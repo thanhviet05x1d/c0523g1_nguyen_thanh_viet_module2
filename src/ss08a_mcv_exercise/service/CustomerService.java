@@ -23,4 +23,10 @@ public class CustomerService implements ICustomerService {
         return customerRepository.deleteCustomer(idDel);
     }
 
+    @Override
+    public Customer[] searchCustomerList(String searchName) {
+        return customerRepository.searchCustomerList(searchName);
+    }
+
+
 }

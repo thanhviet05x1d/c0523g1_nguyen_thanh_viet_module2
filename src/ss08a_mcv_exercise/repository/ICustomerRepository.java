@@ -6,9 +6,7 @@ public interface ICustomerRepository {
     Customer[] findAll();
     void addCustomer(Customer customer);
 
-
-//    void deleteCustomer(Customer customer);
     Customer[] deleteCustomer(int idDel);
 
-//    void findCustomer(Customer customer);
+    Customer[] searchCustomerList(String searchName);
 }
