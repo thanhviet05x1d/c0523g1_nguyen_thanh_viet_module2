@@ -33,6 +33,7 @@ public class TennisGame {
         }
     }
 
+    // Phương thức 2: Tính điểm chung cuộc
     public static String getScore(String player1Name, String player2Name, int player1Score, int player2Score) {
         String score = "";
 
