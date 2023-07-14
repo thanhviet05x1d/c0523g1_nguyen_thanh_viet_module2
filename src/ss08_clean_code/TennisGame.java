@@ -57,14 +57,15 @@ public class TennisGame {
             }
         } else if (player1Score >= 4 || player2Score >= 4) {
             int scoreDifference = player1Score - player2Score;
-            if (scoreDifference == 1)
+            if (scoreDifference == 1) {
                 score = SCORE_ADVANTAGE + player1Name;
-            else if (scoreDifference == -1)
+            } else if (scoreDifference == -1) {
                 score = SCORE_ADVANTAGE + player2Name;
-            else if (scoreDifference >= 2)
+            } else if (scoreDifference >= 2) {
                 score = SCORE_WIN + player1Name;
-            else
+            } else {
                 score = SCORE_WIN + player2Name;
+            }
         } else {
             score = getPlayerScore(player1Score) + "-" + getPlayerScore(player2Score);
         }
