@@ -5,7 +5,8 @@ import ss08_mvc.repository.IStudentRepository;
 import ss08_mvc.repository.StudentRepositoryImpl;
 
 public class IStudentServiceImpl implements IStudentService {
-    private IStudentRepository repository=new StudentRepositoryImpl();
+    private IStudentRepository repository = new StudentRepositoryImpl();
+
     @Override
     public Student[] findAll() {
         return repository.findAll();

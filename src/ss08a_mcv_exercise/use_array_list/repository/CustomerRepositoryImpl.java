@@ -12,7 +12,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
         customerArrayList.add(1, new Customer(2, "Vỹ", 32, "YOUNG"));
         customerArrayList.add(2, new Customer(3, "Vinh", 33, "VIP"));
         customerArrayList.add(3, new Customer(4, "Vĩnh", 33, "VIP"));
-        customerArrayList.add(4, new Customer(5, "Việt 2", 34, "YOUNG"));
+        customerArrayList.add(4, new Customer(5, "Việt 2", 34, "PRO"));
     }
 
     @Override
@@ -23,7 +23,6 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
     @Override
     public void addCustommer(Customer e) {
         customerArrayList.add(e);
-
     }
 
     @Override

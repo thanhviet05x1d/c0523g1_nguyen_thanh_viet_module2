@@ -7,7 +7,7 @@ import ss08a_mcv_exercise.use_array_list.repository.ICustomerRepository;
 import java.util.ArrayList;
 
 public class CustomerServiceImpl implements ICustomerService {
-    ICustomerRepository repository = new CustomerRepositoryImpl();
+    private ICustomerRepository repository = new CustomerRepositoryImpl();
 
     @Override
     public ArrayList<Customer> displayAll() {
