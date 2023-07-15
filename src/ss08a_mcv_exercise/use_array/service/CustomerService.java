@@ -1,8 +1,8 @@
-package ss08a_mcv_exercise.service;
+package ss08a_mcv_exercise.use_array.service;
 
-import ss08a_mcv_exercise.model.Customer;
-import ss08a_mcv_exercise.repository.CustomerRepositoryImpl;
-import ss08a_mcv_exercise.repository.ICustomerRepository;
+import ss08a_mcv_exercise.use_array.model.Customer;
+import ss08a_mcv_exercise.use_array.repository.CustomerRepositoryImpl;
+import ss08a_mcv_exercise.use_array.repository.ICustomerRepository;
 
 public class CustomerService implements ICustomerService {
 
@@ -27,6 +27,5 @@ public class CustomerService implements ICustomerService {
     public Customer[] searchCustomerList(String searchName) {
         return customerRepository.searchCustomerList(searchName);
     }
-
 
 }

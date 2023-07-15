@@ -1,4 +1,4 @@
-package ss08a_mcv_exercise.model;
+package ss08a_mcv_exercise.use_array.model;
 
 public class Customer {
     private int id;

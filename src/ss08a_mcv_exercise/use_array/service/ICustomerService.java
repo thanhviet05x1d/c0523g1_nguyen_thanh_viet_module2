@@ -1,9 +1,10 @@
-package ss08a_mcv_exercise.repository;
+package ss08a_mcv_exercise.use_array.service;
 
-import ss08a_mcv_exercise.model.Customer;
+import ss08a_mcv_exercise.use_array.model.Customer;
 
-public interface ICustomerRepository {
+public interface ICustomerService {
     Customer[] findAll();
+
     void addCustomer(Customer customer);
 
     Customer[] deleteCustomer(int idDel);

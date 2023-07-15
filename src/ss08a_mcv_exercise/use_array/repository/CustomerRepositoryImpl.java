@@ -1,7 +1,6 @@
-package ss08a_mcv_exercise.repository;
+package ss08a_mcv_exercise.use_array.repository;
 
-import ss08_mvc.model.Student;
-import ss08a_mcv_exercise.model.Customer;
+import ss08a_mcv_exercise.use_array.model.Customer;
 
 import java.util.Arrays;
 
@@ -36,7 +35,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
 
     @Override
     public void addCustomer(Customer customer) {
-        customerList[size + 1] = customer;
+        customerList[size] = customer;
         size++;
     }
 
@@ -63,8 +62,8 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
     @Override
     public Customer[] searchCustomerList(String searchName) {
         int searchLength = searchName.length();
-        Customer[] customersSearchList= new Customer[10];
-        int indexOfSearch=0;
+        Customer[] customersSearchList = new Customer[10];
+        int indexOfSearch = 0;
         boolean isMatch = false;
         for (int i = 0; i < size; i++) {
             int customerLength = customerList[i].getName().length();
@@ -79,7 +78,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
                     }
                 }
                 if (k == searchLength) {
-                    customersSearchList[indexOfSearch]=customerList[i];
+                    customersSearchList[indexOfSearch] = customerList[i];
                     indexOfSearch++;
                 }
             }

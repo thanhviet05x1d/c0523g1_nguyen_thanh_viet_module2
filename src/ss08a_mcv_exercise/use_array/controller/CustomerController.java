@@ -1,8 +1,8 @@
-package ss08a_mcv_exercise.controller;
+package ss08a_mcv_exercise.use_array.controller;
 
-import ss08a_mcv_exercise.model.Customer;
-import ss08a_mcv_exercise.service.CustomerService;
-import ss08a_mcv_exercise.service.ICustomerService;
+import ss08a_mcv_exercise.use_array.model.Customer;
+import ss08a_mcv_exercise.use_array.service.CustomerService;
+import ss08a_mcv_exercise.use_array.service.ICustomerService;
 
 import java.util.Scanner;
 
@@ -59,7 +59,7 @@ public class CustomerController {
                     break;
             }
 
-         } while (true);
+        } while (true);
 
     }
 }
