@@ -28,4 +28,9 @@ public class CustomerServiceImpl implements ICustomerService {
     public ArrayList<Customer> searchName(String searchName) {
         return repository.searchName(searchName);
     }
+
+    @Override
+    public ArrayList<Customer> sortByTypeCustomer() {
+        return repository.sortByTypeCustomer();
+    }
 }

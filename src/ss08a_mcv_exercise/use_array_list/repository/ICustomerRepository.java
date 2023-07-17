@@ -9,4 +9,5 @@ public interface ICustomerRepository {
     void addCustommer(Customer e);
     void removeCustomer(int id);
     ArrayList<Customer> searchName(String searchName);
+    ArrayList<Customer> sortByTypeCustomer();
 }

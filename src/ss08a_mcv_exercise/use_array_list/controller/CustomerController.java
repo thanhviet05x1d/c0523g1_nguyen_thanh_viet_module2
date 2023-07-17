@@ -19,6 +19,7 @@ public class CustomerController {
         System.out.println("2. Thêm mới");
         System.out.println("3. Xóa ");
         System.out.println("4. Tìm kiếm tên gần đúng ");
+        System.out.println("5. Sắp xếp theo Type of Customer");
 
         do {
             System.out.println("Mời bạn nhập vào tùy chọn:");
@@ -39,8 +40,8 @@ public class CustomerController {
                     System.out.println("Nhập age:");
                     int age = Integer.parseInt(scanner.nextLine());
                     System.out.println("Nhập type:");
-                    String typeNumber = scanner.nextLine();
-                    Customer newCustomer = new Customer(id, name, age, typeNumber);
+                    String typeCustomer = scanner.nextLine();
+                    Customer newCustomer = new Customer(id, name, age, typeCustomer);
                     service.addCustommer(newCustomer);
                     break;
 
@@ -56,6 +57,13 @@ public class CustomerController {
                     ArrayList<Customer> customerArrayListSearch = service.searchName(searchName);
                     System.out.println("Kết quả tìm kiếm:");
                     for (Customer customer : customerArrayListSearch) {
+                        System.out.println(customer);
+                    }
+                    break;
+                case 5:
+                    System.out.println("Kết quả sau khi sắp xếp:");
+                    ArrayList<Customer> customerArrayListSorted = service.sortByTypeCustomer();
+                    for (Customer customer : customerArrayListSorted) {
                         System.out.println(customer);
                     }
                     break;

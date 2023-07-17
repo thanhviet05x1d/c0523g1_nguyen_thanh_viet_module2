@@ -3,6 +3,9 @@ package ss08a_mcv_exercise.use_array_list.repository;
 import ss08a_mcv_exercise.use_array_list.model.Customer;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class CustomerRepositoryImpl implements ICustomerRepository {
     private static ArrayList<Customer> customerArrayList = new ArrayList<>(10);
@@ -38,11 +41,22 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
     public ArrayList<Customer> searchName(String searchName) {
         ArrayList<Customer> customerArrayListSearch = new ArrayList<>();
         for (int i = 0; i < customerArrayList.size(); i++) {
-            if (customerArrayList.get(i).getName().contains(searchName)){
+            if (customerArrayList.get(i).getName().contains(searchName)) {
                 customerArrayListSearch.add(customerArrayList.get(i));
             }
         }
         return customerArrayListSearch;
     }
 
+    @Override
+    public ArrayList<Customer> sortByTypeCustomer() {
+        ArrayList<Customer> customerArrayListSorted = new ArrayList<>();
+        Collections.sort(customerArrayList, new Comparator<Customer>() {
+            @Override
+            public int compare(Customer o1, Customer o2) {
+                return o1.getTypeCustomer().compareTo(o2.getTypeCustomer());
+            }
+        });
+        return customerArrayList;
+    }
 }
