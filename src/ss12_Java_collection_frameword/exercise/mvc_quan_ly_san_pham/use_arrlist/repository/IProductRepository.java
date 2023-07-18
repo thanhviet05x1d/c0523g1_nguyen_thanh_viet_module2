@@ -1,6 +1,6 @@
-package ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.repository;
+package ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.repository;
 
-import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.model.Product;
+import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.model.Product;
 
 import java.util.List;
 

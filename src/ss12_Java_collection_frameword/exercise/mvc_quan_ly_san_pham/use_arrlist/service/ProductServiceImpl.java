@@ -1,8 +1,8 @@
-package ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.service;
+package ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.service;
 
-import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.model.Product;
-import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.repository.IProductRepository;
-import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.repository.ProductRepositoryImpl;
+import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.model.Product;
+import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.repository.IProductRepository;
+import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.repository.ProductRepositoryImpl;
 
 import java.util.List;
 import java.util.Scanner;

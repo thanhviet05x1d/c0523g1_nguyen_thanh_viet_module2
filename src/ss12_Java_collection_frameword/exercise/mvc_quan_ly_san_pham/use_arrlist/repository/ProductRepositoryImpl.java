@@ -1,8 +1,8 @@
-package ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.repository;
+package ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.repository;
 
-import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.compare.PriceComparatorAscending;
-import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.compare.PriceComparatorDescending;
-import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.model.Product;
+import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.compare.PriceComparatorAscending;
+import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.compare.PriceComparatorDescending;
+import ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.model.Product;
 
 import java.util.ArrayList;
 import java.util.Collections;
