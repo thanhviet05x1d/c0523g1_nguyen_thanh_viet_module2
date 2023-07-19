@@ -64,15 +64,17 @@ public class ProductRepositoryImpl implements IProductRepository {
 
     @Override
     public List<Product> sortByPriceAscending() {
+        List<Product> sortedProductList =new ArrayList<>(productList);
         PriceComparatorAscending priceComparator =new PriceComparatorAscending();
-        Collections.sort(productList,priceComparator);
-        return productList;
+        Collections.sort(sortedProductList,priceComparator);
+        return sortedProductList;
     }
 
     @Override
     public List<Product> sortByPriceDescending() {
+        List<Product> sortedProductList =new ArrayList<>(productList);
         PriceComparatorDescending priceComparatorD =new PriceComparatorDescending();
-        Collections.sort(productList,priceComparatorD);
-        return productList;
+        Collections.sort(sortedProductList,priceComparatorD);
+        return sortedProductList;
     }
 }
