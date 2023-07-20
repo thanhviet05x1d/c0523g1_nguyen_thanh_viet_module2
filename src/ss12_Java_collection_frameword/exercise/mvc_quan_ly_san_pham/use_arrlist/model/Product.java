@@ -1,5 +1,7 @@
 package ss12_Java_collection_frameword.exercise.mvc_quan_ly_san_pham.use_arrlist.model;
 
+import java.util.Objects;
+
 public class Product {
     private int id;
     private String name;
