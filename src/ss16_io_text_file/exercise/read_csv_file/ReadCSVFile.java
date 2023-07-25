@@ -1,4 +1,4 @@
-package ss16_io_text_file.exercise;
+package ss16_io_text_file.exercise.read_csv_file;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

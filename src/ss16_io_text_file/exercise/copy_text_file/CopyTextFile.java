@@ -1,4 +1,4 @@
-package ss16_io_text_file.exercise;
+package ss16_io_text_file.exercise.copy_text_file;
 
 import java.io.FileReader;
 import java.io.FileWriter;

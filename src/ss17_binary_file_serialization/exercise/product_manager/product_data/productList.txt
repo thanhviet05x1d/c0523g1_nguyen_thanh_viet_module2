@@ -1,1 +1,6 @@
-8, Iphone 20, 3.4E7, Apple, Chuwa bán
+1, Iphone 6, 6200000.0, Apple, Hết hàng
+2, Vsmart Active 3, 3200000.0, VinSmart, Còn hàng
+3, Xiaomi mới, 2.3E7, Xiaomi, ok
+4, Iphone 14 ProMax, 2.256E7, Apple, Còn hàng
+5, Samsung Galaxy 8, 1.056E7, Samsung, Hết hàng
+6, Samsung Note 11, 1.156E7, Samsung, Còn hàng

@@ -14,15 +14,16 @@ import java.util.List;
 public class ProductRepositoryImpl implements IProductRepository {
     private static List<Product> productList = new ArrayList<>();
 
-    static {
-        productList.add(new Product(1, "Iphone 6", 6200000, "Apple", "Hết hàng"));
-        productList.add(new Product(2, "Vsmart Active 3", 3200000, "VinSmart", "Còn hàng"));
-        productList.add(new Product(3, "Xiaomi 11 5G Lite", 8550000, "Xiaomi", "Còn hàng"));
-        productList.add(new Product(4, "Iphone 14 ProMax", 22560000, "Apple", "Còn hàng"));
-        productList.add(new Product(5, "Samsung Galaxy 8", 10560000, "Samsung", "Hết hàng"));
-        productList.add(new Product(6, "Samsung Note 11", 11560000, "Samsung", "Còn hàng"));
-        ReadWirteData.writeDataToFile(productList);// Ghi dữ liệu vào file
-    }
+
+//    static {
+//        productList.add(new Product(1, "Iphone 6", 6200000, "Apple", "Hết hàng"));
+//        productList.add(new Product(2, "Vsmart Active 3", 3200000, "VinSmart", "Còn hàng"));
+//        productList.add(new Product(3, "Xiaomi 11 5G Lite", 8550000, "Xiaomi", "Còn hàng"));
+//        productList.add(new Product(4, "Iphone 14 ProMax", 22560000, "Apple", "Còn hàng"));
+//        productList.add(new Product(5, "Samsung Galaxy 8", 10560000, "Samsung", "Hết hàng"));
+//        productList.add(new Product(6, "Samsung Note 11", 11560000, "Samsung", "Còn hàng"));
+//        ReadWirteData.writeDataToFile(productList,false);// Ghi dữ liệu vào file
+//    }
 
     @Override
     public List<Product> displayAll() {
@@ -31,12 +32,14 @@ public class ProductRepositoryImpl implements IProductRepository {
 
     @Override
     public void addProduct(Product product) {
+        productList = ReadWirteData.readDataFromFile();
         productList.add(product);
-        ReadWirteData.writeDataToFile(productList); // Ghi dữ liệu vào file .txt
+        ReadWirteData.writeDataToFile(productList, true); // Ghi dữ liệu vào file .txt
     }
 
     @Override
     public void updateProduct(int id, Product product) {
+        productList = ReadWirteData.readDataFromFile();
         for (Product p : productList) {
             if (p.getId() == id) {
                 p.setName(product.getName());
@@ -46,12 +49,12 @@ public class ProductRepositoryImpl implements IProductRepository {
                 break;
             }
         }
-
-        ReadWirteData.writeDataToFile(productList); // Ghi dữ liệu vào file .txt
+        ReadWirteData.writeDataToFile(productList, false); // Ghi dữ liệu vào file .txt
     }
 
     @Override
     public void deleteProduct(int idDel) {
+        productList = ReadWirteData.readDataFromFile();
         for (Product p : productList) {
             if (p.getId() == idDel) {
                 productList.remove(p);
@@ -59,11 +62,12 @@ public class ProductRepositoryImpl implements IProductRepository {
             }
         }
 
-        ReadWirteData.writeDataToFile(productList); // Ghi dữ liệu vào file .txt
+        ReadWirteData.writeDataToFile(productList, false); // Ghi dữ liệu vào file .txt
     }
 
     @Override
     public List<Product> searchProduct(String searchName) {
+        productList = ReadWirteData.readDataFromFile();
         List<Product> searchProductList = new ArrayList<>();
         for (Product p : productList) {
             if (p.getName().contains(searchName)) {
@@ -75,6 +79,7 @@ public class ProductRepositoryImpl implements IProductRepository {
 
     @Override
     public List<Product> sortByPriceAscending() {
+        productList = ReadWirteData.readDataFromFile();
         List<Product> sortedProductList = new ArrayList<>(productList);
         PriceComparatorAscending priceComparatorA = new PriceComparatorAscending();
         Collections.sort(sortedProductList, priceComparatorA);
@@ -83,6 +88,7 @@ public class ProductRepositoryImpl implements IProductRepository {
 
     @Override
     public List<Product> sortByPriceDescending() {
+        productList = ReadWirteData.readDataFromFile();
         List<Product> sortedProductList = new ArrayList<>(productList);
         PriceComparatorDescending priceComparatorD = new PriceComparatorDescending();
         Collections.sort(sortedProductList, priceComparatorD);

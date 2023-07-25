@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ReadWirteData {
-    public static void writeDataToFile(List<Product> productList) {
+    public static void writeDataToFile(List<Product> productList, boolean append) {
         String path = "D:\\R_CODE_GYM_MY_STUDY\\c0523g1_nguyen_thanh_viet_module2\\src\\ss17_binary_file_serialization\\exercise\\product_manager\\product_data\\productList.txt";
         try {
             File file = new File(path);
-            FileOutputStream fileOutputStream = new FileOutputStream(file);
+            FileOutputStream fileOutputStream = new FileOutputStream(file,append);
             OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream, StandardCharsets.UTF_8);
             BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
 
