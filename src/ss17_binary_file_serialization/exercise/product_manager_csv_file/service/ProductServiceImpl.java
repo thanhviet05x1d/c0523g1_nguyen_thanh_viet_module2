@@ -1,14 +1,14 @@
-package ss17_binary_file_serialization.exercise.product_manager.service;
+package ss17_binary_file_serialization.exercise.product_manager_csv_file.service;
 
-import ss17_binary_file_serialization.exercise.product_manager.model.Product;
-import ss17_binary_file_serialization.exercise.product_manager.repository.IProductRepository;
-import ss17_binary_file_serialization.exercise.product_manager.repository.ProductRepositoryImpl;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.model.Product;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.repository.IProductRepository;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.repository.ProductRepositoryImpl;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class ProductServiceImpl implements IProductService {
-    private IProductRepository productRepository = new ProductRepositoryImpl();
+    IProductRepository productRepository = new ProductRepositoryImpl();
 
     @Override
     public void displayAll() {

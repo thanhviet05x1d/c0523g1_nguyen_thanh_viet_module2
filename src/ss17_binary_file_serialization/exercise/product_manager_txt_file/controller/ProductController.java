@@ -1,7 +1,7 @@
-package ss17_binary_file_serialization.exercise.product_manager.controller;
+package ss17_binary_file_serialization.exercise.product_manager_txt_file.controller;
 
-import ss17_binary_file_serialization.exercise.product_manager.service.IProductService;
-import ss17_binary_file_serialization.exercise.product_manager.service.ProductServiceImpl;
+import ss17_binary_file_serialization.exercise.product_manager_txt_file.service.IProductService;
+import ss17_binary_file_serialization.exercise.product_manager_txt_file.service.ProductServiceImpl;
 
 import java.util.Scanner;
 

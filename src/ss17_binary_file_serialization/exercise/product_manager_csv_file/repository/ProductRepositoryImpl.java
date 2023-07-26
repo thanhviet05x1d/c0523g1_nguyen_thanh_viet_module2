@@ -1,12 +1,10 @@
-package ss17_binary_file_serialization.exercise.product_manager.repository;
+package ss17_binary_file_serialization.exercise.product_manager_csv_file.repository;
 
-import ss17_binary_file_serialization.exercise.product_manager.compare.PriceComparatorAscending;
-import ss17_binary_file_serialization.exercise.product_manager.compare.PriceComparatorDescending;
-import ss17_binary_file_serialization.exercise.product_manager.model.Product;
-import ss17_binary_file_serialization.exercise.product_manager.product_data.ReadWirteData;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.compare.PriceComparatorAscending;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.compare.PriceComparatorDescending;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.model.Product;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.product_data.ReadWirteData;
 
-import java.io.*;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -66,7 +64,7 @@ public class ProductRepositoryImpl implements IProductRepository {
     }
 
     @Override
-    public List<Product> searchProduct(String searchName) {
+    public List<ss17_binary_file_serialization.exercise.product_manager_csv_file.model.Product> searchProduct(String searchName) {
         productList = ReadWirteData.readDataFromFile();
         List<Product> searchProductList = new ArrayList<>();
         for (Product p : productList) {

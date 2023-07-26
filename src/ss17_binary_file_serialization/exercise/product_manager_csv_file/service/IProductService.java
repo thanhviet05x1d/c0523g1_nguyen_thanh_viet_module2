@@ -1,4 +1,4 @@
-package ss17_binary_file_serialization.exercise.product_manager.service;
+package ss17_binary_file_serialization.exercise.product_manager_csv_file.service;
 
 public interface IProductService {
     void displayAll();

@@ -1,6 +1,6 @@
-package ss17_binary_file_serialization.exercise.product_manager.compare;
+package ss17_binary_file_serialization.exercise.product_manager_csv_file.compare;
 
-import ss17_binary_file_serialization.exercise.product_manager.model.Product;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.model.Product;
 
 import java.util.Comparator;
 

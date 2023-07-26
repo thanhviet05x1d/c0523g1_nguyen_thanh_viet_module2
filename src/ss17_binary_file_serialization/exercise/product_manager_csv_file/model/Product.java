@@ -1,4 +1,4 @@
-package ss17_binary_file_serialization.exercise.product_manager.model;
+package ss17_binary_file_serialization.exercise.product_manager_csv_file.model;
 
 public class Product {
     private int id;
@@ -65,7 +65,7 @@ public class Product {
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", company='" + company + '\'' +
-                ", distribute='" + note + '\'' +
+                ", note='" + note + '\'' +
                 '}';
     }
 }

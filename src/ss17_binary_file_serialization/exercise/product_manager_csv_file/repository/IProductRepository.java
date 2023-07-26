@@ -1,6 +1,6 @@
-package ss17_binary_file_serialization.exercise.product_manager.repository;
+package ss17_binary_file_serialization.exercise.product_manager_csv_file.repository;
 
-import ss17_binary_file_serialization.exercise.product_manager.model.Product;
+import ss17_binary_file_serialization.exercise.product_manager_csv_file.model.Product;
 
 import java.util.List;
 

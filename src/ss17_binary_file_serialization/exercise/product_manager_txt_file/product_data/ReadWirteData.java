@@ -1,6 +1,6 @@
-package ss17_binary_file_serialization.exercise.product_manager.product_data;
+package ss17_binary_file_serialization.exercise.product_manager_txt_file.product_data;
 
-import ss17_binary_file_serialization.exercise.product_manager.model.Product;
+import ss17_binary_file_serialization.exercise.product_manager_txt_file.model.Product;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
